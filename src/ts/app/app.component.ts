@@ -1,9 +1,11 @@
-/* Add AppComponent Here */
+import { Component } from "@angular/core";
 
-// Instructions: Create a simple AppComponent which displays the text "Hello World!" 
-// within an H1 tag. The text "Hello World!" should be assigned to a message property
-// on the component, and the message property should be reference by a template
-// variable in the AppComponent template.
+@Component({
+    selector: "widget-tool",
+    template: "<h1>{{message | myUpperCase}}</h1>",
+})
+export class AppComponent {
 
-// Hint: Be sure the selector for the AppComponent matches the custom element in
-// index.html
+    public message: number = 12; //: string = "Hello World!";
+
+}

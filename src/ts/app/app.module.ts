@@ -1,4 +1,13 @@
-/* Add AppModule Code Here */
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-// Instructions: Create a module which registers the AppComponent, and bootstraps
-// the application to display the AppComponent for a web browser environment
+import { AppComponent } from "./app.component";
+import { MyUpperCasePipe } from "./pipes/my-upper-case.pipe";
+
+@NgModule({
+    imports: [ BrowserModule],
+    declarations: [ AppComponent, MyUpperCasePipe ],
+    bootstrap: [ AppComponent ],
+})
+export class AppModule { }
+
