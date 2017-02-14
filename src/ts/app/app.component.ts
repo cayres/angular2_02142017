@@ -1,18 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+/* Add AppComponent Here */
 
-import { App } from "./models/app";
+// Instructions: Create a simple AppComponent which displays the text "Hello World!" 
+// within an H1 tag. The text "Hello World!" should be assigned to a message property
+// on the component, and the message property should be reference by a template
+// variable in the AppComponent template.
 
-@Component({
-  selector: "widget-tool",
-  template: require("./app.component.html"),
-  styles: [require("./app.component.scss")],
-})
-export class AppComponent implements OnInit {
-
-  public app: App;
-
-  public ngOnInit() {
-    this.app = new App("Widgets Manager", "Training 4 Developers, Inc.", (new Date()).getFullYear());
-  }
-
-}
+// Hint: Be sure the selector for the AppComponent matches the custom element in
+// index.html

@@ -3,4 +3,5 @@ node_modules
 typings
 *.log
 reports
+demos
 
