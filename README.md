@@ -1,4 +1,62 @@
-# Angular 2 Widgets Sample Application
+# Welcome to Advanced Angular 2 with TDD
+
+## Instructor
+
+Eric Greene - [http://t4d.io](http://t4d.io) - [LinkedIn](https://www.linkedin.com/in/ericwgreene)
+
+## Schedule
+
+Class:
+
+- Today & Tomorrow: 9am to 5pm
+
+Breaks:
+
+- Morning: 10:25am to 10:35am
+- Lunch: Noon to 1pm
+- Afternoon #1: 2:15pm to 2:25pm
+- Afternoon #2: 3:40pm to 3:50pm
+
+## Course Outline
+
+Day 1
+
+- Quick Assessment
+- Angular 2 Overview
+- Unit Testing Overview
+- TDD Synchronous Code
+- Pipes
+- Services
+- Components
+
+Day 2
+
+- JavaScript Asynchronous Programming Review
+- TDD Asynchronous Code
+- HTTP Services
+- Promises & Observables
+
+## Links
+
+### Instructor's Resources
+
+- [Accelebrate, Inc.](https://www.accelebrate.com/)
+- [Eric's Blog](http://t4d.io/)
+- [WintellectNOW](https://www.wintellectnow.com/Home/Instructor?instructorId=EricGreene) - Special Offer Code: GREENE-2016
+- [Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=Eric%20Greene&lang=1033)
+- [React Blog Posts - Post 4 - React Unit Tests](https://github.com/training4developers/react-flux-blog)
+- [TopTal Videos](https://www.toptal.com/videos)
+- [React SitePoint](http://www.sitepoint.com/author/ericgreene/)
+- [Redux Videos](https://egghead.io/courses/getting-started-with-redux)
+
+### Other Resources
+
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [JavaScript Air Podcast](http://javascriptair.podbean.com/)
+- [Speaking JavaScript](http://speakingjs.com/es5/)
+- [TC39 Process - Feature Stages](http://www.2ality.com/2015/11/tc39-process.html)
+- [Official ES2016 Features](http://www.2ality.com/2016/01/ecmascript-2016.html)
+- [Possible ES2017 Features](http://www.2ality.com/2016/02/ecmascript-2017.html)
 
 ## Overview
 
