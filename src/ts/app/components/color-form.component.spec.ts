@@ -1,4 +1,4 @@
-import { async, TestBed, ComponentFixture } from "@angular/core/testing";
+import { async, fakeAsync, tick, TestBed, ComponentFixture } from "@angular/core/testing";
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
@@ -26,7 +26,7 @@ describe("color form tests", () => {
 
         TestBed.configureTestingModule({
             imports: [ FormsModule ],
-            declarations: [ColorForm ]
+            declarations: [ ColorForm ],
         });
 
         fixture = TestBed.createComponent(ColorForm);
@@ -46,7 +46,14 @@ describe("color form tests", () => {
         const el: HTMLInputElement = pageObj.newColorInput.nativeElement;
 
         el.value = colorInputValue;
+
+        // el.addEventListener("input", function(e) {
+        //     console.log("input event", e.target.value);
+        // });
+
+        //pageObj.newColorInput.triggerEventHandler("input", { target: el });
         el.dispatchEvent(new Event("input"));
+        //tick(50);
 
 
         component.colorSubmitted.subscribe((newColor: string) => {
