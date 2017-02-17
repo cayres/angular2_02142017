@@ -36,9 +36,9 @@ describe("color form tests", () => {
 
     it("user gets submitted color", () => {
 
-        const colorInputValue = "hot pink";
-
         fixture.detectChanges();
+
+        const colorInputValue = "hot pink";
 
         const debugElement = fixture.debugElement;
         const pageObj = getColorFormPageObject(debugElement);
@@ -47,27 +47,14 @@ describe("color form tests", () => {
 
         el.value = colorInputValue;
 
-        // el.addEventListener("input", function(e) {
-        //     console.log("input event", e.target.value);
-        // });
-
-        //pageObj.newColorInput.triggerEventHandler("input", { target: el });
         el.dispatchEvent(new Event("input"));
-        //tick(50);
-
 
         component.colorSubmitted.subscribe((newColor: string) => {
-            console.log("add color button clicked");
-            // should work correctly, but at the moment do not
-            // TODO
-            // expect(component.newColor).toBe(colorInputValue);
-            // expect(newColor).toBe(colorInputValue);
+            expect(component.newColor).toBe(colorInputValue);
+            expect(newColor).toBe(colorInputValue);
         });
 
         pageObj.addColorButton.nativeElement.dispatchEvent(new Event("click"));
-
-        // fixture.detectChanges();
-
     });
 
 

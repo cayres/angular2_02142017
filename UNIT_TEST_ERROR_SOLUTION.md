@@ -1,0 +1,1 @@
+When running the unit test for the input field it failed because the input field was inside of a form tag. For the kind of test I was writing, it should not have been in the form tag. Once I removed the form tag it worked correctly.
